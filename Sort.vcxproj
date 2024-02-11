@@ -127,9 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="counting_sort.cpp" />
+    <ClCompile Include="deterministic_quick_select.cpp" />
+    <ClCompile Include="deterministic_quick_sort.cpp" />
     <ClCompile Include="merge_sort.cpp" />
     <ClCompile Include="quick_select.cpp" />
     <ClCompile Include="quick_sort.cpp" />
+    <ClCompile Include="radix_sort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

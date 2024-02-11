@@ -71,7 +71,7 @@
 	}*/
 //};
 
-class log_n_Sort {
+class MergeSort {
 private:
 	template<typename T>
 	void merge(std::vector<T>& array, int left, int right) {
@@ -122,6 +122,6 @@ public:
 //
 //int main() {
 //	std::vector<int> v{ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
-//	log_n_Sort merge;
+//	MergeSort merge;
 //	merge.merge_sortArray(v);
 //}

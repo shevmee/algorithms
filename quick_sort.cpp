@@ -19,7 +19,7 @@ private:
 	std::mt19937 generator;
 };
 
-class log_n_Sort {
+class MergeSort {
 private:
 	MersenneTwister mt;
 
@@ -27,11 +27,12 @@ private:
 	int partition(std::vector<T>& array, int begin, int end) {
 		int pivotIndex = mt.generateRandomIndex(end - begin + 1) + begin;
 		std::swap(array[pivotIndex], array[end]);
+		int pivot = array[end];
 		int l = begin - 1;
 
 		for (size_t i = begin; i < end; ++i) {
-			if (array[i] >= array[pivotIndex]) continue;
-			if (array[i] < array[pivotIndex]) {
+			if (array[i] >= array[pivot]) continue;
+			if (array[i] < array[pivot]) {
 				++l;
 				std::swap(array[l], array[i]);
 			}
@@ -62,8 +63,8 @@ public:
 	}
 };
 
-int main() {
-	std::vector<int> v{ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
-	log_n_Sort quick;
-	quick.quick_sortArray(v);
-}
+//int main() {
+//	std::vector<int> v{ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
+//	QuickSort quick;
+//	quick.quick_sortArray(v);
+//}

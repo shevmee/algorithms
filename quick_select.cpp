@@ -27,11 +27,12 @@ private:
 	int partition(std::vector<T>& array, int begin, int end) {
 		int pivotIndex = mt.generateRandomIndex(end - begin + 1) + begin;
 		std::swap(array[pivotIndex], array[end]);
+		int pivot = array[end];
 		int l = begin - 1;
 
 		for (size_t i = begin; i < end; ++i) {
-			if (array[i] >= array[pivotIndex]) continue;
-			if (array[i] < array[pivotIndex]) {
+			if (array[i] >= array[pivot]) continue;
+			if (array[i] < array[pivot]) {
 				++l;
 				std::swap(array[l], array[i]);
 			}
