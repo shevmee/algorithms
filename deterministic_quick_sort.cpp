@@ -21,7 +21,6 @@ private:
         return l + 1;
     }
 
-    template<typename T>
     T medianOfFive(std::vector<T>& arr, int begin, int end) {
         int mid = begin + (end - begin) / 2;
         int quarter1 = begin + (mid - begin) / 2;

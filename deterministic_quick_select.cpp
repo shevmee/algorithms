@@ -64,14 +64,14 @@ private:
 	}
 public:
 	T deterministic_quick_selectElem(std::vector<int>& nums, int k) {
-		T kth_element = quick_select(nums, 0, nums.size() - 1, k - 1);
+		T kth_element = deterministic_quick_select(nums, 0, nums.size() - 1, k - 1);
 		return kth_element;
 	}
 };
 
-int main() {
-	std::vector<int> v{ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
-    DeterministicQuickSelect<int> select;
-	int kth_element = select.deterministic_quick_selectElem(v, 3);
-	std::cout << "The 3rd smallest element is: " << kth_element << std::endl;
-}
+//int main() {
+//	std::vector<int> v{ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
+//    DeterministicQuickSelect<int> select;
+//	int kth_element = select.deterministic_quick_selectElem(v, 3);
+//	std::cout << "The 3rd smallest element is: " << kth_element << std::endl;
+//}
