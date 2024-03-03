@@ -30,9 +30,6 @@
     <ClCompile Include="radix_sort.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="deterministic_quick_sort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="deterministic_quick_select.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>

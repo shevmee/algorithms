@@ -43,15 +43,15 @@ public:
     }
 };
 
-int main() {
-    std::vector<int> array = { 12, 4, 5, 6, 7, 2, 3, 1, 15 };
-
-    HeapSort<int> heapSort;
-    heapSort.sort(array);
-
-    std::cout << "Sorted array: ";
-    for (int num : array) {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-}
+//int main() {
+//    std::vector<int> array = { 12, 4, 5, 6, 7, 2, 3, 1, 15 };
+//
+//    HeapSort<int> heapSort;
+//    heapSort.sort(array);
+//
+//    std::cout << "Sorted array: ";
+//    for (int num : array) {
+//        std::cout << num << " ";
+//    }
+//    std::cout << std::endl;
+//}
